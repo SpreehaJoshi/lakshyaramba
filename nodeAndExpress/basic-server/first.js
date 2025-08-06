@@ -3,9 +3,9 @@ const app = express();
 
 const port = 8000;
 
-app.get('/about', ()=>{
+app.get('/about', (req, res)=>{
     res.status(200).json({
-        message: "Message handled successfully!"
+        message: "Message handled unsuccessfully!"
     });
 });
 
